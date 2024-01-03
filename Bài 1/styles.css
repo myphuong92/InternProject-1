@@ -1,3 +1,4 @@
+/* SET UP */
 *,
 *::before,
 *::after {
@@ -75,13 +76,14 @@ a:link, a:visited {
     color: black;
     text-decoration: none;
 }
+
 /* HOME  */
 /* INTRODUCTION */
-.sectionHomeEven{
+.sectionWhite{
     padding: 100px 0px;
     background-color: white;
 }
-.sectionHomeOdd{
+.sectionBlue{
     padding: 100px 0px;
 }
 .SectionOne button{
@@ -123,51 +125,8 @@ a:link, a:visited {
     font-weight: 500;
 }
 /* SECTION TWO */
-/* CARD */
-.set-card{
-    margin-top: 64px;
-    display: flex;
-}
-.card{
-    margin: 15px 0px;
-    background-color: white;
-    border-radius: 10px;
-}
-.set-card div:not(:last-child){
-    margin-right: 30px;
-}
-.card .content{
-    margin: 25px 0px;
-}
-.card .content p:first-child{
-    margin-bottom: 17px;
-}
-.card-text-desc{
-    font-size: 13px;
-    font-weight: 500;
-    line-height: calc(32.4 / 18);
-    color: #5B5B5B;
-}
-.card-text-title{
-    font-size: 17px;
-    font-weight: 700;
-    line-height: calc(32.4 / 18);
-    color: black;
-}
-.card-learn-more a, .card-learn-more span{
-    color: #F58A07;
-    cursor: pointer;
-    
-
-}
-.card-learn-more{
-    align-items: center;
-    display: flex;
-}
-.card span{
-    color: #F58A07;
-    font-size: 30px;
-    font-weight: 600;
+.SectionTwo .set-card img{
+    border-radius: 20px;
 }
 /* SECTION THREE */
 
@@ -253,14 +212,21 @@ a:link, a:visited {
     justify-content: center;
     
 }
+/* SECTION SEVEN */
+.SectionSeven .set-card img{
+    border-radius: 20px 20px 0px 0px;
+}
 /* CUSTOM CLASS */
 .w-50{
     width: 50%;
 }
+.flex{
+    display: flex;
+}
+/* Text */
 .text-title{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
-    color: black;
 }
 .text-title-white{
     font-size: 30px;
@@ -286,9 +252,8 @@ a:link, a:visited {
 .text-justify{
     text-align: justify;
 }
-.flex{
-    display: flex;
-}
+
+/* Margin */
 .mr-30{
     margin-right: 30px;
 }
@@ -314,15 +279,23 @@ a:link, a:visited {
 .m-30{
     margin: 30px !important;
 }
-.px-100{
-    padding-left: 100px;
-    padding-right: 100px;
-}
 .mt-80{
     margin-top: 80px;
 }
 .mt-40{
     margin-top: 40px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+/* Padding */
+.px-100{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.px-30{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 /* Status button */
 .active{
@@ -335,6 +308,70 @@ a:link, a:visited {
     font-weight: 600;
     
 }
+/* CARD */
+.set-card{
+    margin-top: 64px;
+    display: flex;
+}
+.card{
+    margin: 15px 0px;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.set-card div:not(:last-child){
+    margin-right: 30px;
+}
+.card .content{
+    margin: 25px 0px;
+}
+.card .content p:first-child{
+    margin-bottom: 17px;
+}
+.card-text-desc{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: calc(32.4 / 18);
+    color: #5B5B5B;
+}
+.card-text-title{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: calc(32.4 / 18);
+    color: black;
+}
+.card-learn-more a, .card-learn-more span{
+    color: #F58A07;
+    cursor: pointer;
+}
+.card-learn-more{
+    align-items: center;
+    display: flex;
+}
+.card span{
+    color: #F58A07;
+    font-size: 30px;
+    font-weight: 600;
+}
+/* FOOTER */
+footer .content > div{
+    width: 25%;
+}
+footer p, footer a, footer i{
+    color: white;
+}
+footer .footer-icon a{
+    margin-right: 10px;
+}
+footer > div{
+    padding: 80px 320px;
+    background-color: #063255;
+}
+footer .footer-icon{
+    width: 20px;
+    
+}
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .container {
         padding-left: 20px;
@@ -347,6 +384,9 @@ a:link, a:visited {
     /* .text-desc {
 		font-size: 20px;
 	} */
+    .SectionOne{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
