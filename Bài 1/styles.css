@@ -80,26 +80,13 @@ a:link, a:visited {
 /* HOME  */
 /* INTRODUCTION */
 .sectionWhite{
-    padding: 100px 0px;
+    padding-top: 100px ;
     background-color: white;
 }
 .sectionBlue{
-    padding: 100px 0px;
+    padding-top: 100px ;
 }
-.SectionOne button{
-    border: none;
-    border-radius: 5rem;
-    padding: 10px 20px;   
-    cursor: pointer;
-}
-.SectionOne button:first-child{
-    color: #F58A07;
-    background: #FEF3E6;
-}
-.SectionOne button:nth-of-type(2){
-    color: #1D3444;
-    background-color: transparent;
-}
+
 .HomeIntroContent > .content > p:first-child{
     margin-bottom: 12px;
 }
@@ -132,8 +119,13 @@ a:link, a:visited {
 
 /* SECTION FOUR */
 .SectionFour img{
+    height: auto;
     border-radius: 20px;
-    width: 90%;
+}
+.SectionFour .Ribbon{
+    width: 178px !important;
+    top: -16px;
+    right: -16px;
 }
 .SectionFour > div:last-child{
     background-color: #DCEAF5;
@@ -141,14 +133,8 @@ a:link, a:visited {
     padding: 50px;
     border-radius: 20px;
 }
-.SectionFour > div:last-child button{
-    border: solid #A8BCCC thin;
-    color: #A8BCCC;
-    border-radius: 5rem;
-    padding: 10px 20px;   
-    cursor: pointer;
-    margin-right: 24px;
-}
+
+
 /* HOME BANNER */
 .HomeBanner .bannerContent{
     background-color: #F58A07;
@@ -216,12 +202,100 @@ a:link, a:visited {
 .SectionSeven .set-card img{
     border-radius: 20px 20px 0px 0px;
 }
+
+/* ABOUT US */
+.row-of-man > img{
+    margin-top: 64px;
+    width: 23%
+}
+.row-of-man >div:not(:last-child){
+    margin-right: 2rem;
+
+}
+.man-desc{
+    background-color: black;
+    opacity: 0.7;
+    padding: 30px;
+    bottom:0;
+    border-radius: 20px;
+}
+.man-desc p{
+    color:white;
+    margin-top: 5px;
+}
+.man-desc .job{
+    font-size: 11px;
+}
+.man-desc .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.man-desc .desc{
+    font-size: 13px;
+}
+.block-color-medium{
+    background-color: #F58A07;
+    opacity: 0.8;
+    width: 30%;
+    height: 35%;
+    border-radius: 10px;
+    right: 30px;
+    bottom: -30px;
+}
+.block-color-small-1{
+    background-color: #F58A07;
+    opacity: 0.8;
+    width: 12%;
+    height: 16%;
+    border-radius: 10px;
+    top: 20%;
+    left: -5%;
+}
+.block-color-small-2{
+    background-color: #F58A07;
+    opacity: 0.8;
+    width: 12%;
+    height: 16%;
+    border-radius: 10px;
+    bottom: 25%;
+    right: 4%;
+}
+.block-color-small-3{
+    background-color: #F58A07;
+    opacity: 0.8;
+    width: 12%;
+    height: 16%;
+    border-radius: 10px;
+    top: 50%;
+    left: -30px;
+}
+.block-color-small-4{
+    background-color: #F58A07;
+    opacity: 0.8;
+    width: 12%;
+    height: 16%;
+    border-radius: 10px;
+    top: 60%;
+    left: -30px;
+}
 /* CUSTOM CLASS */
 .w-50{
     width: 50%;
 }
+.w-100{
+    width: 100%;
+}
+.w-90{
+    width: 90%;
+}
+.w-33{
+    width: 33.3%;
+}
 .flex{
     display: flex;
+}
+.flex-between{
+    justify-content: space-between;
 }
 /* Text */
 .text-title{
@@ -252,10 +326,19 @@ a:link, a:visited {
 .text-justify{
     text-align: justify;
 }
-
+/* Images */
+.border-rounded-20{
+    border-radius: 20px;
+}
 /* Margin */
 .mr-30{
     margin-right: 30px;
+}
+.mr-24{
+    margin-right: 24px;
+}
+.mr-40{
+    margin-right: 40px;
 }
 .ml-10{
     margin-left: 10px;
@@ -282,11 +365,17 @@ a:link, a:visited {
 .mt-80{
     margin-top: 80px;
 }
+.mt-64{
+    margin-top: 64px;
+}
 .mt-40{
     margin-top: 40px;
 }
 .mt-30{
     margin-top: 30px;
+}
+.mt-20{
+    margin-top: 20px;
 }
 /* Padding */
 .px-100{
@@ -297,16 +386,31 @@ a:link, a:visited {
     padding-left: 30px;
     padding-right: 30px;
 }
-/* Status button */
-.active{
-    /* margin: auto 12px; */
-    border: none !important;
-    border-radius: 5rem;
-    padding: 10px 20px;
-    color: #F58A07 !important;
-    background: #FEF3E6;
-    font-weight: 600;
-    
+.pb-100{
+    padding-bottom: 100px;
+}
+/* POSITION */
+.relative{
+    position: relative;;
+}
+.absolute{
+    position: absolute;
+}
+/* COMPONENTS */
+/* JOB CARDS */
+.job-card{
+    background-color: #EDF7FF;
+    padding: 32px 40px;
+    width: 30%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.job-card .card-text-desc{
+    margin-bottom: 17px;
+}
+.job-card:not(:last-child){
+    margin-right: 30px;
+
 }
 /* CARD */
 .set-card{
@@ -353,23 +457,148 @@ a:link, a:visited {
     font-size: 30px;
     font-weight: 600;
 }
-/* FOOTER */
-footer .content > div{
+/* Circle text */
+.circle-text{
+    top: -28px;
+    right: -28px;
+}
+/* COLOR-SHADE */
+.color-shade{
+    background-color: #F58A07;
+    top: 0;
+    left: 0;
     width: 25%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 20px 0px 0px 20px;
+
+} 
+/* Circle text  */
+
+/* Paragraph with text */
+.one-image-one-paragraph .paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.one-image-one-paragraph button{
+    width: 30%;
+}
+/* Button */
+
+.button-text-white-bg-orange{
+    border-radius: 30px;
+    padding: 12px 24px;
+    color: white;
+    background-color: #F58A07;
+    border: none;
+    font-weight: 600;
+}
+.button-active{
+    border: none;
+    border-radius: 5rem;
+    padding: 10px 20px;
+    color: #F58A07;
+    background: #FEF3E6;
+    font-weight: 600;
+}
+.button-deactive{
+    border: solid #A8BCCC thin;
+    color: #A8BCCC;
+    border-radius: 5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 24px;
+}
+.button-text-orange-bg-white{
+    border-radius: 30px;
+    padding: 12px 24px;
+    color: #F58A07;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+}
+.button-with-no-bg{
+    
+    color: #1D3444;
+    background-color: transparent;
+    border: none;
+    border-radius: 5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* FOOTER */
+footer .container{
+    position: relative;
+}
+footer .left-color-block{
+    position:absolute;
+    background-color: #F58A07;
+    width: 53px;
+    height: 144px;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 20px 0px 0px;
+
+}
+footer .right-color-block{
+    position:absolute;
+    background-color: #F58A07;
+    width: 53px;
+    height: 287px;
+    border-radius: 20px 0px 0px 20px;
+    top: 60px;
+    right: 0;
+
+}
+footer .content > div:first-child{
+    width: 35%;
+}
+footer .content > div:last-child{
+    width: 35%;
+    padding-left: 50px;
+}
+footer .content > div:nth-of-type(2),footer .content > div:nth-of-type(3){
+    width: 15%;
+
 }
 footer p, footer a, footer i{
-    color: white;
+    color: white !important;
 }
 footer .footer-icon a{
     margin-right: 10px;
 }
 footer > div{
-    padding: 80px 320px;
+    padding: 50px 100px;
     background-color: #063255;
 }
 footer .footer-icon{
     width: 20px;
     
+}
+.footer-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+footer .listFooter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+footer .listFooter a, footer .listFooter p, footer .listFooter button{
+    margin-top: 16px;
+}
+footer .footer-input{
+    border-radius: 20px;
+    padding: 10px 32px;
+    border: none;
+}
+
+footer .copyright{
+    justify-content: space-between;
+}
+footer .copyright div:last-child p:not(:last-child){
+    margin-right: 30px;
 }
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
