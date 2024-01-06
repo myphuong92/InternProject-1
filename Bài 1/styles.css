@@ -28,6 +28,7 @@ svg {
 }
 button,
 textarea,
+input,
 select {
     outline: none;
 }
@@ -79,9 +80,13 @@ a:link, a:visited {
 
 /* HOME  */
 /* INTRODUCTION */
-.sectionWhite{
+.sectionWhite:not(:first-child){
     padding-top: 100px ;
     background-color: white;
+}
+.sectionWhite{
+    background-color: white;
+    padding-top: 20px;
 }
 .sectionBlue{
     padding-top: 100px ;
@@ -152,7 +157,7 @@ a:link, a:visited {
     padding-right: 8rem;
 }
 /* SECTION SIX */
-.avatar{
+.userInfo .avatar{
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -278,6 +283,63 @@ a:link, a:visited {
     top: 60%;
     left: -30px;
 }
+/* BLOG PAGE */
+.blog-page .set-card .card{
+    background-color: #EDF7FF;
+}
+/* BLOG INNER PAGE */
+.blog-inner .blog-cover{
+    border-radius: 20px;
+}
+.blog-inner .one-image-one-paragraph{
+    
+    padding: 80px 180px;
+}
+.blog-inner .paragraph{
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* CAREER DETAILS */
+.career-details .career-required .detail{
+    display: flex;
+    justify-content: space-between;
+}
+.career-required{
+    background-color: #EDF7FF;
+    padding: 64px;
+}
+.career-details .career-required .detail .content{
+    width: 70%;
+}
+.career-details .career-required .detail .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.career-details .career-required .detail:first-child .title{
+    color: #F58A07;
+}
+.job-apply-form input, .job-apply-form textarea{
+    padding: 15px 20px;
+    width: 48%;
+    margin: 10px 10px 10px 0px;
+    background-color: #EDF7FF;
+    
+    border: none;
+    border-radius: 20px;
+}
+
+.job-apply-form textarea{
+    width: 97%;
+    height: 8rem;
+    resize: none;
+}
+.job-apply-form textarea::-webkit-scrollbar{
+    width: 0;
+}
+.job-apply-form .form{
+    margin-top: 40px;
+}
+
 /* CUSTOM CLASS */
 .w-50{
     width: 50%;
@@ -293,6 +355,9 @@ a:link, a:visited {
 }
 .flex{
     display: flex;
+}
+.flex-column{
+    flex-direction: column;
 }
 .flex-between{
     justify-content: space-between;
@@ -359,6 +424,10 @@ a:link, a:visited {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.my-64{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
 .m-30{
     margin: 30px !important;
 }
@@ -376,6 +445,13 @@ a:link, a:visited {
 }
 .mt-20{
     margin-top: 20px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mb-64{
+    
+    margin-bottom: 64px;
 }
 /* Padding */
 .px-100{
@@ -416,12 +492,17 @@ a:link, a:visited {
 .set-card{
     margin-top: 64px;
     display: flex;
+    flex-wrap: wrap;
 }
 .card{
     margin: 15px 0px;
     background-color: white;
     border-radius: 20px;
     padding-bottom: 20px;
+    width: 30%;
+}
+.card img{
+    border-radius: 20px 20px 0px 0px;
 }
 .set-card div:not(:last-child){
     margin-right: 30px;
@@ -457,6 +538,7 @@ a:link, a:visited {
     font-size: 30px;
     font-weight: 600;
 }
+
 /* Circle text */
 .circle-text{
     top: -28px;
@@ -483,6 +565,36 @@ a:link, a:visited {
 }
 .one-image-one-paragraph button{
     width: 30%;
+}
+.paragraph-read-more a, .paragraph-read-more span{
+    color: #F58A07;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+.paragraph-read-more a{
+    font-size: 20px;
+}
+.paragraph-read-more{
+    align-items: center;
+    display: flex;
+}
+.paragraph-user-detail{
+    align-items: center;
+}
+.paragraph-user-detail p{
+    color: #394149;
+}
+.paragraph-user-detail .paragraph-user .avatar{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.paragraph-user-detail .paragraph-user{
+    align-items: center;
+    margin-right: 24px;
 }
 /* Button */
 
