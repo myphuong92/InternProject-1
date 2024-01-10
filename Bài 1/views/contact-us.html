@@ -13,21 +13,70 @@
 <body>
     <header>
         <div class="container px-100">
-            <div>
-                <span class="text-title">&#123;finsweet</span>
-            </div>
-            <div id="nav">
-                <a href="">About Us</a>
-                <a href="">Careers</a>
-                <a href="">Services</a>
-                <a href="">Blog</a>
-                <a href="">Contact Us</a>
-                <button class="button-active ml-10">Clone Project</button>
-            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><span class="material-symbols-outlined">close</span></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li> <a href="#">Contact Us</a></li>
+                    <li><a href="#"><button class="button-active ml-10">Clone Project</button></a></li>
+                    
+                </ul>
+                <ul>
+                    <li  class="text-title"><a href="#">&#123;finsweet</a></li>
+                    <li><a class="hideOnMobile" href="#">About Us</a></li>
+                    <li><a class="hideOnMobile" href="#">Careers</a></li>
+                    <li><a class="hideOnMobile" href="#">Services</a></li>
+                    <li><a class="hideOnMobile" href="#">Blog</a></li>
+                    <li> <a class="hideOnMobile" href="#">Contact Us</a></li>
+                    <li><a class="hideOnMobile" href="#"><button class="button-active ml-10">Clone Project</button></a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
+                </ul>
+            </nav>
+            
         </div>
     </header>
     <main>
-        
+        <div class="sectionWhite">
+            <div class="contact-us flex px-100">
+                <div class="form">
+                    <div class="form-content">
+                        <p class="text-heading">Have a question ? Let’s get in touch with us.</p>
+                        <p>Fill up the Form  and ou team will get back to within 24 hrs</p>
+                    </div>
+                    <div class="form-input flex flex-column">
+                        <input placeholder="First Name" type="text">
+                        <input placeholder="Last Name" type="text">
+                        <input placeholder="Email address" type="text">
+                        <textarea placeholder="Type message" name="" id="" cols="30" rows="10"></textarea>
+                        <button class="button-text-white-bg-orange w-30">Submit</button>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <div class="flex mr-30">
+                        <div class="location flex flex-column w-50">
+                            <p style="font-size: 24px;" class="text-title">Location</p>
+                            <div class="content">
+                                <p>DLF Cybercity, Bhubaneswar,</p>
+                                <p>India, &52050</p>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <p style="font-size: 24px;" class="text-title">Contact Us</p>
+                            <div class="content">
+                                <p>020 7993 2905</p>
+                                <p>hi@finsweet.com</p>
+                            </div>
+                           
+                    </div>
+                </div>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4403542014984!2d106.652929473775!3d10.777546159175662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2264a57a65%3A0xf808a6ff21488797!2sC%C3%B4ng%20ty%20TNHH%20PIZITECH!5e0!3m2!1sen!2s!4v1704765008705!5m2!1sen!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            </div>
+            </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">
@@ -79,5 +128,8 @@
 
         </div>
     </footer>
+    <script src="/Bài 1/scripts/script.js"></script>
+    
+
 </body>
 </html>

@@ -14,29 +14,46 @@
 <body>
     <header>
         <div class="container px-100">
-            <div>
-                <span class="text-title">&#123;finsweet</span>
-            </div>
-            <div id="nav">
-                <a href="">About Us</a>
-                <a href="">Careers</a>
-                <a href="">Services</a>
-                <a href="">Blog</a>
-                <a href="">Contact Us</a>
-                <button class="button-active ml-10">Clone Project</button>
-            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><span class="material-symbols-outlined">close</span></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li> <a href="#">Contact Us</a></li>
+                    <li><a href="#"><button class="button-active ml-10">Clone Project</button></a></li>
+                    
+                </ul>
+                <ul>
+                    <li  class="text-title"><a href="#">&#123;finsweet</a></li>
+                    <li><a class="hideOnMobile" href="#">About Us</a></li>
+                    <li><a class="hideOnMobile" href="#">Careers</a></li>
+                    <li><a class="hideOnMobile" href="#">Services</a></li>
+                    <li><a class="hideOnMobile" href="#">Blog</a></li>
+                    <li> <a class="hideOnMobile" href="#">Contact Us</a></li>
+                    <li><a class="hideOnMobile" href="#"><button class="button-active ml-10">Clone Project</button></a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
+                </ul>
+            </nav>
+            
         </div>
     </header>
     <main class="container">
         <!-- Section One -->
         <section class="sectionBlue">
-            <div class="SectionOne flex px-100 pb-100">
-                <div class="HomeIntroContent w-50">
+            <div class="SectionOne home-one flex flex-row-reverse px-100">
+                <div class="home-intro-img relative">
+                    <img src="/Bài 1/source/img/HomeIntro.png" alt="">
+                    <div class="home-intro-block fade"></div>
+                    <div class="home-intro-block"></div>
+                </div>
+                <div class="HomeIntroContent w-50 pb-100">
                     <div class="content">
                         <p class="text-heading">Prosper with our bespoke&nbsp;solutions</p>
-                        <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br> Suspendisse varius enim in eros elementum tristique</p>
+                        <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
                     </div>
-                    <div>
+                    <div class="home-intro-button">
                         <button style="font-weight: 500;" class="button-text-white-bg-orange">See Our Services</button>
                         <button class="button-with-no-bg">See All Services</button>
                     </div>
@@ -58,14 +75,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-50">
-                    <img src="/Bài 1/source/img/HomeIntro.png" alt="">
-                </div>
+                
+                
             </div>
         </section>
         <!-- Section Two -->
         <section class="sectionWhite">
-            <div class="SectionTwo px-100 pb-100">
+            <div class="SectionTwo home-two px-100 pb-100">
                 <div  class="w-50">
                     <p class="text-heading">We help more than 1500 companies from all sectors</p>
                     <p class="text-desc my-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
@@ -111,9 +127,9 @@
         </section>
         <!-- SECTION THREE -->
         <section class="sectionBlue">
-            <div class="SectionThree px-100 pb-100">
+            <div class="SectionThree home-three px-100 pb-100">
                 <div class="flex">
-                    <p style="font-size: 30px !important;" class="w-50 text-title mr-30">We are building software solution that solves your business challenges</p>
+                    <p style="font-size: 30px" class="w-50 text-title mr-30">We are building software solution that solves your business challenges</p>
                     <p class="w-50 text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
                 </div>
                 <div class="set-card">
@@ -147,8 +163,9 @@
 
         <!-- SECTION FOUR -->
         <section class="sectionWhite ">
-            <div class="SectionFour px-100 pb-100">
-                <div class="flex one-image-one-paragraph">
+            <div class="SectionFour home-four px-100 pb-100">
+                <div class="home-four-zero one-image-one-paragraph">
+                    
                     <div class="paragraph content w-50 mr-30">
                         <div>
                             <p class="text-title">The energy of a start-up combined with 30 years of experience.</p>
@@ -168,10 +185,10 @@
     
                         </div>
                     </div>
-                    <div class="w-50">
+                    <div class="img w-50">
                         <div class="relative">
                             <img  src="/Bài 1/source/img/HomeSection4-1.png" alt="">
-                            <div class="color-shade absolute"></div>
+                            <div class="color-sade absolute"></div>
                             <!-- <svg class="absolute circle-text" width="100" height="100">
                                 <circle cx="40" cy="40" r="35" fill="none" stroke="black" />
                                 <text font-size="5" fill="black">
@@ -179,19 +196,13 @@
                                 </text>
                                 <path id="circlePath" d="M 40 10 A 30 30 0 0 1 40 50" fill="none"/>
                               </svg> -->
-                              
-                              
                         </div>
-                        
-                          
-                          
-                          
                     </div>
 
                     
                 </div>
                 
-                <div class="relative">
+                <div class="home-four-one relative">
                     <div class="button">
                         <button class="button-active mr-24" href="">Business Strategy</button>
                         <button class="button-deactive" href="">Digitalization</button>
@@ -207,7 +218,7 @@
                                 <span class="material-symbols-outlined">arrow_right_alt</span>
                             </div>
                         </div>
-                        <div class="w-50">
+                        <div class="img w-50">
                             <div class="relative">
                                 <img class="w-90" src="/Bài 1/source/img/HomeSection4-2.png" alt="">
                                 <div class="color-shade absolute"></div>
@@ -233,9 +244,16 @@
             </div>
         </section>
         <!-- SECTION SIX -->
-        <section class="sectionWhite pb-100">
-            <div class="SectionSix px-100">
-                <div class="flex one-image-one-paragraph">
+        <section class="sectionWhite">
+            <div class="SectionSix home-six px-100 pb-100">
+                <div class="flex flex-row-reverse one-image-one-paragraph">
+                    <div class="video w-50">
+                        <img src="/Bài 1/source/img/Section6.png" alt="">
+                        <div class="flex">
+                            <span class="material-symbols-outlined">play_circle</span>
+                            <p>Play Video</p>
+                        </div>
+                    </div>
                     <div class="paragraph content w-50">
                         <div>
                             <p class="text-title">Finsweet was a dream to&nbsp;work&nbsp;with</p>
@@ -249,19 +267,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="video w-50">
-                        <img src="/Bài 1/source/img/Section6.png" alt="">
-                        <div class="flex">
-                            <span class="material-symbols-outlined">play_circle</span>
-                            <p>Play Video</p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </section>
         <!-- SECTION SEVEN -->
         <section class="sectionBlue">
-            <div class="SectionSeven px-100 pb-100">
+            <div class="SectionSeven home-seven px-100 pb-100">
                 <div>
                     <p class="text-title">Latest Blog & News</p>
                 </div>
@@ -314,7 +326,7 @@
        
           
         <!-- FOOTER -->
-       
+        
     </main>
     <footer>
         <div class="container">
@@ -322,7 +334,7 @@
                 <div class="firstCol">
                     <p class="text-title">&#123;finsweet</p>
                     <p class="text-title mt-30">Bespoke software solutions</p>
-                    <div class="footer-icon flex mt-30">
+                    <div class="footer-icon flex">
                         <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                         <a href=""><i class="fa-brands fa-youtube"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -366,6 +378,8 @@
 
         </div>
     </footer>
-    
+   
+    <script src="/Bài 1/scripts/script.js"></script>
+
 </body>
 </html>

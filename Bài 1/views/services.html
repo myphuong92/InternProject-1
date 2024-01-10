@@ -14,17 +14,29 @@
 <body>
     <header>
         <div class="container px-100">
-            <div>
-                <span class="text-title">&#123;finsweet</span>
-            </div>
-            <div id="nav">
-                <a href="">About Us</a>
-                <a href="">Careers</a>
-                <a href="">Services</a>
-                <a href="">Blog</a>
-                <a href="">Contact Us</a>
-                <button class="button-active ml-10">Clone Project</button>
-            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><span class="material-symbols-outlined">close</span></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li> <a href="#">Contact Us</a></li>
+                    <li><a href="#"><button class="button-active ml-10">Clone Project</button></a></li>
+                    
+                </ul>
+                <ul>
+                    <li  class="text-title"><a href="#">&#123;finsweet</a></li>
+                    <li><a class="hideOnMobile" href="#">About Us</a></li>
+                    <li><a class="hideOnMobile" href="#">Careers</a></li>
+                    <li><a class="hideOnMobile" href="#">Services</a></li>
+                    <li><a class="hideOnMobile" href="#">Blog</a></li>
+                    <li> <a class="hideOnMobile" href="#">Contact Us</a></li>
+                    <li><a class="hideOnMobile" href="#"><button class="button-active ml-10">Clone Project</button></a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
+                </ul>
+            </nav>
+            
         </div>
     </header>
     <main>
