@@ -14,7 +14,7 @@ body {
     line-height: 1.5;
     background-color: #DCEAF5;
     min-width: 100vh;
-    
+    overflow-y: auto;
 }
 
 html {
@@ -44,15 +44,17 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/* .container {
+.container {
+    
     width: 100%;
     max-width: 1933px !important;
     margin: 0 auto;
    
-} */
+}
 /* HEADER */
 
 header{
+    
     top: 0px;
     z-index: 50;
     position: sticky;
@@ -100,6 +102,10 @@ nav li:first-child{
 }
 .sidebar a{
     width: 100%;
+}
+header > div{
+    padding-left: 100px;
+    padding-right: 100px;
 }
 /* NAVIGATION */
 
@@ -164,6 +170,9 @@ a:link, a:visited {
 /* SECTION TWO */
 .SectionTwo .set-card img{
     border-radius: 20px;
+}
+.about-two .set-card .card{
+    width: 22%;
 }
 /* SECTION THREE */
 
@@ -243,7 +252,7 @@ a:link, a:visited {
     left: 30px;
     cursor: pointer;
 }
-.SectionSix .content{
+.card-finsweet .content{
     margin-right: 110px;
     justify-content: center;
     
@@ -679,9 +688,7 @@ a:link, a:visited {
 /* Circle text  */
 
 /* Paragraph with text */
-.one-image-one-paragraph .img{
-    width: 100%;
-}
+
 .one-image-one-paragraph{
     display: flex;
 }
@@ -887,7 +894,7 @@ footer .copyright div:last-child p:not(:last-child){
         padding-top: 60px;
     }
     
-    .SectionOne, .SectionTwo, .SectionThree, .SectionFour,.SectionSix, .SectionSeven{
+    .SectionOne, .SectionTwo, .SectionThree, .SectionFour,.SectionSix, .SectionSeven, .about-four, .card-finsweet{
         display: block;
         padding-left: 20px;
         padding-right: 20px;
@@ -904,6 +911,10 @@ footer .copyright div:last-child p:not(:last-child){
     }
     .menu-button{
         display: block;
+    }
+    header > div{
+        padding-left: 20px;
+        padding-right: 20px;
     }
     /* FOOTER */
     footer .content{
@@ -946,7 +957,6 @@ footer .copyright div:last-child p:not(:last-child){
     /* CARD */
     .set-card{
         margin-top: 1rem;
-        
         justify-content: space-between;
     }
     .card{
@@ -973,11 +983,14 @@ footer .copyright div:last-child p:not(:last-child){
     }
     /* Paragraph with text */
     .one-image-one-paragraph{
-        display: block;
+        justify-content: space-between;
     }
     .one-image-one-paragraph .paragraph{
-        width: 100%;
+        width: 47%;
         margin-right: 0px;
+    }
+    .one-image-one-paragraph button{
+        width: 50%;
     }
     /* HOME PAGE */
     .home-one{
@@ -1036,7 +1049,7 @@ footer .copyright div:last-child p:not(:last-child){
     }
     
     .home-four-one .one-image-one-paragraph{
-        display: flex;
+       
         margin-top: 26px;
     }
     .home-four-one .one-image-one-paragraph .paragraph .text-desc{
@@ -1070,17 +1083,25 @@ footer .copyright div:last-child p:not(:last-child){
     .HomeBanner .bannerContent > div{
         padding-left: 2rem;
     }
-    .home-six .one-image-one-paragraph{
-        display: flex;
-    }
+    
     .home-six img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .home-six .paragraph{
-        width: 50%;
+    .home-four-one .button{
+        display: flex;
+        justify-content: center;
     }
+    /* ABOUT US */
     
-    
+    .about-two .text-title{
+        margin-top: 0px;
+    }
+    .about-four > div:first-child{
+        width: 100%;
+    }
+    .row-of-man{
+        margin-top: 30px;
+    }
 }
