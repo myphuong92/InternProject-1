@@ -876,8 +876,11 @@ footer .copyright div:last-child p:not(:last-child){
         padding-right: 20px;
     }
     /* TEXT */
+    .policy-content .policy-heading{
+        font-size: 36px;
+    }
     .text-heading {
-        font-size: 30px;
+        font-size: 36px;
     }
     .text-desc {
 		font-size: 16px;
@@ -894,7 +897,7 @@ footer .copyright div:last-child p:not(:last-child){
         padding-top: 60px;
     }
     
-    .SectionOne, .SectionTwo, .SectionThree, .SectionFour,.SectionSix, .SectionSeven, .about-four, .card-finsweet{
+    .SectionOne, .SectionTwo, .SectionThree, .SectionFour,.SectionFive, .SectionSix, .SectionSeven, .Job, .blog-page, .about-four, .card-finsweet, .career-details, .service-px-20, .blog-inner, .contact-us{
         display: block;
         padding-left: 20px;
         padding-right: 20px;
@@ -992,6 +995,13 @@ footer .copyright div:last-child p:not(:last-child){
     .one-image-one-paragraph button{
         width: 50%;
     }
+    .one-image-one-paragraph .paragraph-user-detail p{
+        font-size: 14px;
+    }
+    /* JOB CARD */
+    .job-card {
+        width: 46%;
+    }
     /* HOME PAGE */
     .home-one{
         display: flex;
@@ -1082,7 +1092,9 @@ footer .copyright div:last-child p:not(:last-child){
     }
     .HomeBanner .bannerContent > div{
         padding-left: 2rem;
+        padding-right: 1rem;
     }
+    
     
     .home-six img{
         width: 100%;
@@ -1103,5 +1115,40 @@ footer .copyright div:last-child p:not(:last-child){
     }
     .row-of-man{
         margin-top: 30px;
+    }
+    /* BLOG INNER PAGE */
+    .blog-inner .one-image-one-paragraph{
+        padding: 0px 60px;
+        margin-top: 40px;
+    }
+    .blog-inner .paragraph{
+        width: 100%;
+    }
+    /* CAREER DETAILS */
+    .career-details .text-heading{
+        margin-bottom: 20px;
+    }
+    .career-details .career-required{
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    .career-required{
+        padding: 40px;
+    }
+    /* CONTACT US */
+    .contact-us .form-input button {
+        margin-top: 0rem;
+    }
+    .contact-us{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-us .form{
+        margin-right: 0px;
+        width: 47%;
+    }
+    /* POLICY CONTENT */
+    .policy-content{
+        padding: 0px 60px 4rem 60px;
     }
 }
