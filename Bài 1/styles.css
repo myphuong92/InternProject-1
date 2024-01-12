@@ -13,8 +13,9 @@
 body {
     line-height: 1.5;
     background-color: #DCEAF5;
-    min-width: 100vh;
-    overflow-y: auto;
+    /* min-width: 100vh; */
+    width: 100%;
+
 }
 
 html {
@@ -71,7 +72,7 @@ nav ul{
     align-items: center;
 }
 nav li{
-    height: 80px;
+    height: 70px;
 }
 nav a{
     height: 100%;
@@ -140,17 +141,32 @@ a:link, a:visited {
 .HomeIntroContent > div:nth-of-type(2){
     margin-bottom: 56px;
 }
+
 .home-intro-img img{
     height: 100%;
     width: 100%;
     object-fit:cover;
 }
+.home-intro-img .img{
+    width: 100%;
+    height: 100%;
+}
 .home-intro-block{
     position: absolute;
-    color: #D37F07;
-    width: 30%;
-    height: 35%;
-
+    background-color: #D37F07;
+    width: 15%;
+    height: 38%;
+    border-radius: 20px 20px 0px 0px;
+    right: 18%;
+    bottom: 0;
+    z-index: -1;
+}
+.home-intro-block.fade{
+    left: 20%;
+    width: 20%;
+    height: 60%;
+    opacity: 0.6;
+    z-index: 1;
 }
 .logoIntro{
     margin-top: 18px;
@@ -247,9 +263,6 @@ a:link, a:visited {
     font-size: 30px;
 }
 .video > div{
-    position:absolute;
-    bottom: 30px;
-    left: 30px;
     cursor: pointer;
 }
 .card-finsweet .content{
@@ -583,6 +596,9 @@ a:link, a:visited {
     
     margin-bottom: 64px;
 }
+.mb-30{
+    margin-bottom: 30px;
+}
 /* Padding */
 .px-100{
     padding-left: 100px;
@@ -849,11 +865,24 @@ footer .copyright div:last-child p:not(:last-child){
 .menu-button{
     display: none;
 }
+/* CARD FINSWEET */
+.card-finsweet .video > div{
+    position: relative;
+}
+.card-finsweet .video > div .icon{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
 /* RESPONSIVE */
 
 /* IPAD */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container {
+@media (min-width: 768px) and (max-width: 1024px) {
+    header > div{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    header > .container {
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -861,26 +890,135 @@ footer .copyright div:last-child p:not(:last-child){
     .text-heading {
         font-size: 38px;
     }
-    .hideOnMobile{
+    /* responsive header */
+    /* .hideOnMobile{
         display: none;
-    }
-    .menu-button{
+    } */
+    /* .menu-button{
         display: block;
+    } */
+    .SectionOne, .SectionTwo, .SectionThree, .SectionFour,.SectionFive, .SectionSix, .SectionSeven, .Job, .blog-page, .about-four, .card-finsweet, .career-details, .service-px-20, .blog-inner, .contact-us{
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 70px;
+    }
+    /* COMPONENT */
+    /* .one-image-one-paragraph */
+    .one-image-one-paragraph button{
+        width: 50%;
+    }
+    /* job list */
+    .jobList{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .jobList .job-card{
+        width: 30%;
+    }
+    /* footer */
+    footer .content > div:nth-of-type(2), footer .content > div:nth-of-type(3){
+        width: 25%;
+    } 
+    footer .button-text-white-bg-orange{
+        padding: 12px 18px;
+    }
+    /* set card */
+    .set-card{
+        margin-top: 40px;
+    }
+    /* HOME PAGE */
+    .home-intro-block{
+        right: 21%;
+    }
+    .home-intro-block.fade{
+        left: 25%;
+        width: 17%;
+    }
+    .home-one{
+        align-items: center;
+    }
+    .HomeIntroContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+    .HomeIntroContent > div:nth-of-type(2) {
+        margin-bottom: 30px;
+    }
+    .home-intro-button{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sectionWhite:not(:first-child){
+        padding-top: 70px;
+    }
+    .home-four .set-card{
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .home-four .set-card .card{
+        width: 46%;
+    }
+    .HomeBanner .bannerContent > div{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    /* BLOG INNER */
+    .blog-inner .one-image-one-paragraph{
+        padding: 60px 80px 0px 80px
+    }
+    /* CAREER DETAILS */
+    .job-apply-form{
+        padding-bottom: 0px;
+    }
+    .career-required .detail{
+        margin-bottom: 10px;
+    }
+    /* CONTACT US */
+    .contact-us{
+        flex-direction:row-reverse;
+    }
+    .contact-us .location-detail{
+        width: 47%;
+    }
+    .contact-us .location-detail .location{
+        margin-right: 0px;
+    }
+    .contact-us .form-input button{
+        width: 50%;
+        margin-top: 1rem;
+    }
+    /* PRIVACY POLICY */
+    .policy-content{
+        padding: 0px 150px 3rem 150px;
     }
 }
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
+    
     header > .container {
         padding-left: 20px;
         padding-right: 20px;
     }
     /* TEXT */
+    /* ROW OF MAN */
+    .man-desc .job{
+        font-size: 12px;
+    }
+    .man-desc .desc{
+        font-size: 13px;
+    }
     .policy-content .policy-heading{
-        font-size: 36px;
+        font-size: 32px;
     }
     .text-heading {
-        font-size: 36px;
+        font-size: 32px;
     }
     .text-desc {
 		font-size: 16px;
@@ -894,14 +1032,15 @@ footer .copyright div:last-child p:not(:last-child){
         padding-top: 40px;
     }
     .sectionWhite:not(:first-child){
-        padding-top: 60px;
+        padding-top: 40px;
     }
     
     .SectionOne, .SectionTwo, .SectionThree, .SectionFour,.SectionFive, .SectionSix, .SectionSeven, .Job, .blog-page, .about-four, .card-finsweet, .career-details, .service-px-20, .blog-inner, .contact-us{
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     
     /* COMPONENT */
@@ -940,7 +1079,7 @@ footer .copyright div:last-child p:not(:last-child){
         margin-top: 5px;
     }
     footer > div{
-        padding: 40px 80px;
+        padding: 40px 70px;
     }
     footer .secondCol, footer .thirdCol, footer .fourthCol{
         margin: 40px 0px;
@@ -957,6 +1096,12 @@ footer .copyright div:last-child p:not(:last-child){
     .fourthCol .listFooter{
         margin-top: 0.5rem;
     }
+    footer .listFooter button{
+        width: 100%;
+    }
+    footer .footer-input{
+        width: 100%;
+    }
     /* CARD */
     .set-card{
         margin-top: 1rem;
@@ -964,7 +1109,7 @@ footer .copyright div:last-child p:not(:last-child){
     }
     .card{
         margin-top: 1rem;
-        width: 47%;
+        width: 100%;
     }
     .card > img{
         width: 100%;
@@ -986,27 +1131,132 @@ footer .copyright div:last-child p:not(:last-child){
     }
     /* Paragraph with text */
     .one-image-one-paragraph{
+        flex-direction: column;
         justify-content: space-between;
     }
-    .one-image-one-paragraph .paragraph{
-        width: 47%;
-        margin-right: 0px;
+    .one-image-one-paragraph .img >div{
+        display: flex;
+        justify-content: center;
     }
+    .one-image-one-paragraph .paragraph{
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+    .one-image-one-paragraph .paragraph .text-heading{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .paragraph-read-more a, .paragraph-read-more span {
+        margin-top: 0px;
+    }
+    .one-image-one-paragraph .paragraph .text-desc{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .one-image-one-paragraph .img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* .abou .color-shade{
+        left: 25px;
+    } */
     .one-image-one-paragraph button{
-        width: 50%;
+        width: 100%;
+        font-size: 13px;
+        margin-top: 0px;
     }
     .one-image-one-paragraph .paragraph-user-detail p{
         font-size: 14px;
     }
+    
     /* JOB CARD */
     .job-card {
         width: 46%;
     }
+    .Job .jobList{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .job-card:not(:last-child) {
+        margin-right: 0px;
+    }
+    .job-card{
+        padding: 35px 20px;
+    }
+    .job-apply-form{
+        padding-bottom: 40px;
+    }
+    /* ROW OF MAN */
+    .man-desc{
+        padding: 20px;
+    }
+    .row-of-man{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .row-of-man > div{
+        width: 47%;
+        margin-bottom: 1rem;
+    }
+    .row-of-man >div:not(:last-child){
+        margin-right: 0px;
+    }
+    /* card finsweet */
+    .card-finsweet .video, .card-finsweet .paragraph{
+        width: 100%;
+    }
+    .userInfo{
+        margin-top: 0px;
+    }
+    .userInfo .avatar{
+        width: 60px;
+        height: 60px;
+    }
+    .userInfo .info .name{
+        font-size: 16px;
+    }
+    .userInfo .info .job{
+        font-size: 13px;
+    }
     /* HOME PAGE */
-    .home-one{
-        display: flex;
+    .home-intro-block{
+        right: 23%;
+    }
+    .home-intro-block.fade{
+        left: 27%;
+        width: 16%;
+    }
+    .HomeIntroContent > .content > p:first-child{
+        margin-top: 10px;
+    }
+    .HomeIntroContent{
+        width: 100%;
         padding-bottom: 0px;
-        padding-right: 0px;
+    }
+    .HomeIntroContent > div:nth-of-type(2){
+        margin-bottom: 40px;
+    }
+    .home-intro-button button{
+        font-size: 13px;
+        width: 50%;
+    }
+    .home-intro-button{
+        display: flex;
+        justify-content: space-between;
+    }
+    .HomeIntroContent .content {
+        margin-bottom: 20px;
+    }
+    .logoIntro{
+        flex-wrap: wrap;
+
+    }
+    .logoIntro > div{
+        margin: 0px 3px
     }
     /* .HomeIntroContent > .content .text-desc{
         text-align: justify;
@@ -1039,6 +1289,7 @@ footer .copyright div:last-child p:not(:last-child){
         
     }
     .SectionFour > div:last-child{
+        padding: 20px;
         margin-top: 40px;
     }
     .home-four .set-card {
@@ -1049,17 +1300,29 @@ footer .copyright div:last-child p:not(:last-child){
     .home-four .card {
         width: 47%;
     }
-    .home-four-one button{
-        font-size: 14px;
-    }
+    
     .SectionFour img{
         margin-left:auto;
         margin-right: auto;
         display: block;
     }
+    .home-four-one button{
+        font-size: 11px;
+        padding: 10px 10px;
+        margin-right: 8px;
+    }
     
+    .SectionFour .Ribbon{
+        display: none;
+    }
+    .home-four-one .one-image-one-paragraph .img{
+        width: 100%;
+    }
+    .home-four-one .one-image-one-paragraph .paragraph{
+        width: 100%;
+    }
     .home-four-one .one-image-one-paragraph{
-       
+       flex-direction: column;
         margin-top: 26px;
     }
     .home-four-one .one-image-one-paragraph .paragraph .text-desc{
@@ -1074,13 +1337,20 @@ footer .copyright div:last-child p:not(:last-child){
     }
     .home-four-zero{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
     .home-four-zero .img{
-        width: 50%;
+        width: 100%;
     }
     .home-four-zero .paragraph{
-        width: 46%;
+        width: 100%;
+    }
+    .HomeBanner{
+        flex-direction: column;
+    }
+    .HomeBanner > div{
+        width: 100%;
     }
     .HomeBanner img{
         width: 100%;
@@ -1089,12 +1359,15 @@ footer .copyright div:last-child p:not(:last-child){
     }
     .HomeBanner button{
         margin-top: 10px;
+        font-size: 13px;
+        padding: 10px 18px;
     }
     .HomeBanner .bannerContent > div{
-        padding-left: 2rem;
-        padding-right: 1rem;
+        padding: 2rem;
     }
-    
+    .HomeBanner .bannerContent .text-title-white{
+        font-size: 24px;
+    }
     
     .home-six img{
         width: 100%;
@@ -1103,23 +1376,36 @@ footer .copyright div:last-child p:not(:last-child){
     }
     .home-four-one .button{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     /* ABOUT US */
-    
+    .about-three .block-color-medium{
+        right: -6px;
+    }
     .about-two .text-title{
         margin-top: 0px;
     }
     .about-four > div:first-child{
         width: 100%;
     }
-    .row-of-man{
-        margin-top: 30px;
+    
+    .about-two > div:first-child{
+        flex-direction: column;
     }
+    .about-two > div:first-child p{
+        width: 100%;
+    }
+    .about-two .text-title{
+        width: 47%;
+    }
+    .about-two .set-card .card {
+        width: 47%;
+    }
+
     /* BLOG INNER PAGE */
     .blog-inner .one-image-one-paragraph{
-        padding: 0px 60px;
-        margin-top: 40px;
+        padding: 0px 0px;
+        margin-top: 20px;
     }
     .blog-inner .paragraph{
         width: 100%;
@@ -1135,6 +1421,29 @@ footer .copyright div:last-child p:not(:last-child){
     .career-required{
         padding: 40px;
     }
+    .career-details .salary{
+        width: 46%;
+    }
+    .career-required .detail{
+        flex-direction: column;
+    }
+    
+    .career-details .career-required .detail .content{
+        margin: 10px 0px 20px 0px;
+        width: 100%;
+    }
+    .job-apply-form .form input{
+        width: 100%;
+    }
+    .job-apply-form .form{
+        margin: 10px 0px;
+    }
+    .job-apply-form .form .button{
+        width: 100%;
+    }
+    .job-apply-form .button-text-white-bg-orange{
+        width: 100%;
+    }
     /* CONTACT US */
     .contact-us .form-input button {
         margin-top: 0rem;
@@ -1144,11 +1453,43 @@ footer .copyright div:last-child p:not(:last-child){
         justify-content: space-between;
     }
     .contact-us .form{
+        margin-top: 3rem;
         margin-right: 0px;
-        width: 47%;
+        width: 100%;
     }
+    .contact-us .form button{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .contact-us .location-detail{
+        width: 100%;
+    }
+    .contact-us .location-detail > div:first-child{
+        justify-content: space-between;
+        margin-right: 0px;
+    }
+    .contact-us .location-detail .location{
+        margin-right: 0px;
+    }
+    .contact-us .location-detail .google-map{
+        margin-top: 1rem;
+    }
+    .contact-us .form-content {
+        margin-bottom: 1rem;
+    }
+    .contact-us .form .form-content > p:not(:first-child){
+        font-size: 16px;
+    }
+   
     /* POLICY CONTENT */
     .policy-content{
-        padding: 0px 60px 4rem 60px;
+        padding: 0px 20px 4rem 20px;
+    }
+    /* SERVICE */
+    .one-image-one-paragraph .img >div .block-color-small-1,.one-image-one-paragraph .img >div .block-color-small-3, .one-image-one-paragraph .img >div .block-color-small-4{
+        left: 0;
+    }
+    .one-image-one-paragraph .img >div .block-color-small-2{
+        right: 0;
     }
 }

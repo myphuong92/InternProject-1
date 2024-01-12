@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- <meta name="viewport" content="width=1000; user-scalable=0;" /> -->
+    <!-- <meta name="viewport" content="width=device-width"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Bài 1/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -22,7 +25,6 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li> <a href="contact-us.html">Contact Us</a></li>
-                        <li><a href="#"><button class="button-active ml-10">Clone Project</button></a></li>
                         
                     </ul>
                     <ul>
@@ -32,7 +34,7 @@
                         <li><a class="hideOnMobile" href="services.html">Services</a></li>
                         <li><a class="hideOnMobile" href="blog.html">Blog</a></li>
                         <li> <a class="hideOnMobile" href="contact-us.html">Contact Us</a></li>
-                        <li><a class="hideOnMobile" href="#"><button class="button-active ml-10">Clone Project</button></a></li>
+                        <li><a class="" href="#"><button class="button-active ml-10">Clone Project</button></a></li>
                         <li class="menu-button" onclick="showSidebar()"><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
                     </ul>
                 </nav>
@@ -43,10 +45,15 @@
             <!-- Section One -->
             <section class="sectionBlue">
                 <div class="SectionOne home-one flex flex-row-reverse px-100">
-                    <div class="home-intro-img relative">
-                        <img src="/Bài 1/source/img/HomeIntro.png" alt="">
-                        <div class="home-intro-block fade"></div>
-                        <div class="home-intro-block"></div>
+                    <div class="home-intro-img">
+                        <div class="img relative">
+                            <img src="/Bài 1/source/img/HomeIntro.png" alt="">
+
+                            <div class="home-intro-block fade"></div>
+                            <div class="home-intro-block"></div>
+                        </div>
+                        
+
                     </div>
                     <div class="HomeIntroContent w-50 pb-100">
                         <div class="content">
@@ -78,6 +85,7 @@
                     
                     
                 </div>
+
             </section>
             <!-- Section Two -->
             <section class="sectionWhite">
@@ -129,7 +137,7 @@
             <section class="sectionBlue">
                 <div class="SectionThree home-three px-100 pb-100">
                     <div class="flex">
-                        <p style="font-size: 30px" class="w-50 text-title mr-30">We are building software solution that solves your business challenges</p>
+                        <p class="w-50 text-title mr-30">We are building software solution that solves your business challenges</p>
                         <p class="w-50 text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
                     </div>
                     <div class="set-card">
@@ -164,8 +172,13 @@
             <!-- SECTION FOUR -->
             <section class="sectionWhite ">
                 <div class="SectionFour home-four px-100 pb-100">
-                    <div class="home-four-zero one-image-one-paragraph">
-                        
+                    <div class="home-four-zero flex-row-reverse one-image-one-paragraph">
+                        <div class="img w-50">
+                            <div class="relative">
+                                <img  src="/Bài 1/source/img/HomeSection4-1.png" alt="">
+                                <div class="color-shade absolute"></div>
+                            </div>
+                        </div>
                         <div class="paragraph content w-50 mr-30">
                             <div>
                                 <p class="text-title">The energy of a start-up combined with 30 years of experience.</p>
@@ -185,19 +198,7 @@
         
                             </div>
                         </div>
-                        <div class="img w-50">
-                            <div class="relative">
-                                <img  src="/Bài 1/source/img/HomeSection4-1.png" alt="">
-                                <div class="color-shade absolute"></div>
-                                <!-- <svg class="absolute circle-text" width="100" height="100">
-                                    <circle cx="40" cy="40" r="35" fill="none" stroke="black" />
-                                    <text font-size="5" fill="black">
-                                      <textPath xlink:href="#circlePath">Best agency 2020-2021 | london</textPath>
-                                    </text>
-                                    <path id="circlePath" d="M 40 10 A 30 30 0 0 1 40 50" fill="none"/>
-                                  </svg> -->
-                            </div>
-                        </div>
+                       
     
                         
                     </div>
@@ -208,7 +209,14 @@
                             <button class="button-deactive" href="">Digitalization</button>
                             <button class="button-deactive" href="">Risk assessment</button>
                         </div>
-                        <div class="flex mt-80 one-image-one-paragraph">
+                        <div class="flex flex-row-reverse mt-80 one-image-one-paragraph">
+                            <div class="img w-50">
+                                <div class="relative">
+                                    <img class="w-90" src="/Bài 1/source/img/HomeSection4-2.png" alt="">
+                                    <div class="color-shade absolute"></div>
+    
+                                </div>
+                            </div>
                             <div class="paragraph content w-50 mr-30">
                                 <p class="text-title">Helping clients with research and strategy for their business</p>
                                 <p class="text-desc my-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque. </p>
@@ -218,13 +226,7 @@
                                     <span class="material-symbols-outlined">arrow_right_alt</span>
                                 </div>
                             </div>
-                            <div class="img w-50">
-                                <div class="relative">
-                                    <img class="w-90" src="/Bài 1/source/img/HomeSection4-2.png" alt="">
-                                    <div class="color-shade absolute"></div>
-    
-                                </div>
-                            </div>
+                            
                         </div>
                         <img  class="Ribbon absolute" src="/Bài 1/source/img/Ribbon.png" alt="">
                     </div>
@@ -248,10 +250,12 @@
                 <div class="card-finsweet home-six px-100 pb-100">
                     <div class="flex flex-row-reverse one-image-one-paragraph">
                         <div class="video w-50">
-                            <img src="/Bài 1/source/img/Section6.png" alt="">
-                            <div class="flex">
-                                <span class="material-symbols-outlined">play_circle</span>
-                                <p>Play Video</p>
+                            <div>
+                                <img src="/Bài 1/source/img/Section6.png" alt="">
+                                <div class="icon flex">
+                                    <span class="material-symbols-outlined">play_circle</span>
+                                    <p>Play Video</p>
+                                </div>
                             </div>
                         </div>
                         <div class="paragraph content w-50">
