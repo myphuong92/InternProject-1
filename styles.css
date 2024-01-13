@@ -882,7 +882,10 @@ footer .footer-input{
 footer .copyright{
     justify-content: space-between;
 }
-footer .copyright div:last-child p:not(:last-child){
+footer .copyright > div{
+    justify-content: space-between;
+}
+footer .copyright div:last-child a{
     margin-right: 30px;
 }
 .menu-button{
