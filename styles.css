@@ -196,6 +196,7 @@ a:link, a:visited {
     margin-left: 5px;
     font-weight: 700;
 }
+
 .logoIntro span{
     font-weight: 500;
 }
@@ -1098,6 +1099,10 @@ footer .copyright div:last-child a{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .header-line button.button-active{
+        padding: 5px 10px;
+        margin-left: 0px;
+    }
     /* FOOTER */
     footer .content{
         display: block;
@@ -1300,6 +1305,12 @@ footer .copyright div:last-child a{
     }
     .logoIntro > div{
         margin: 0px 3px
+    }
+    .logoIntro p{
+        font-size: 13px;
+    }
+    .logoIntro img{
+        width: 24px;
     }
     /* .HomeIntroContent > .content .text-desc{
         text-align: justify;
