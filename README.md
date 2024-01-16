@@ -18,6 +18,7 @@ The project is structured as follows:
 1. Clone the repository to your local machine.
 2. Open the index.html file in your preferred web browser.
 
+*Note:* You can visit the web page via this [link](https://myphuong92.github.io/InternProject-1/)
 ## Usage
 - Explore the different sections of the web application.
 
