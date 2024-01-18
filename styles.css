@@ -99,18 +99,31 @@ nav li:first-child{
     margin-right: auto;
 }
 .sidebar{
-    position: fixed;
+    
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 50%;
+        transform: translateX(100%);
+    opacity: 0;
+    /* position: fixed;
     top: 0;
-    right: 0;
+    right: 0; */
     height: 100vh;
     width: 400px;
     z-index: 999;
     background-color: white;
     backdrop-filter: blur(10px);
-    display: none;
+    /* display: none; */
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    transition: 0.5s ease-in-out;
+}
+.sidebar.active{
+    transform: translateX(0);
+    opacity: 1;
 }
 .sidebar li{
     width: 100%;

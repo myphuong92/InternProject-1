@@ -10,11 +10,18 @@ if (textarea) {
 
 function showSidebar() {
   const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "flex";
+  if (sidebar) {
+    sidebar.classList.add("active");
+  }
 }
 function hideSidebar() {
+  const close = document.querySelector(".close-icon");
   const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "none";
+  if (sidebar) {
+    close.addEventListener("click", function () {
+      sidebar.classList.remove("active");
+    });
+  }
 }
 // CONTACT US PAGE
 // const contactTextarea = document.querySelector(".contact-us textarea");
