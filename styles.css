@@ -100,12 +100,11 @@ nav li:first-child{
 }
 .sidebar{
     
-        display: flex;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 50%;
-        transform: translateX(100%);
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
     opacity: 0;
     /* position: fixed;
     top: 0;
